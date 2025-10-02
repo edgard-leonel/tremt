@@ -33,6 +33,7 @@ services:
       - --api
   purger:
     image: ghcr.io/kitconcept/cluster-purger:latest
+    platform: linux/amd64
     environment:
       PURGER_SERVICE_NAME: varnish
       PURGER_SERVICE_PORT: 80
